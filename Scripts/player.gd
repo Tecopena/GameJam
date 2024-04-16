@@ -5,6 +5,7 @@ extends CharacterBody2D
 @onready var animation_tree:AnimationTree = $AnimationTree
 @onready var state_machine:PlayerStateMachine = $PlayerStateMachine
 
+
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 var direction :Vector2 = Vector2.ZERO
 var has_doubled_jumped:bool = false;
@@ -25,6 +26,7 @@ func _physics_process(delta):
 	move_and_slide()
 	update_animation()
 	update_facing_direction()
+	
 
 func update_animation():
 	animation_tree.set("parameters/Move/blend_position", direction.x)
@@ -34,3 +36,13 @@ func update_facing_direction():
 		sprite.flip_h =false
 	elif direction.x < 0:
 		sprite.flip_h =true
+
+func _process(delta):
+	pass
+
+func _input(event : InputEvent):
+	# move o player para baixo se ele estiver em cima de uma plataforma atravessavel
+	if event.is_action_pressed("crouch") and is_on_floor():
+		position.y += 1
+	
+	

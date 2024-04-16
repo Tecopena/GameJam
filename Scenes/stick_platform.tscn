@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://bq8brhy1itc2f"]
+
+[ext_resource type="Texture2D" uid="uid://vlws8w6fyifk" path="res://Arts/Pixel Adventure 1 (1)/Free/Traps/Platforms/Brown Off.png" id="1_tq37x"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_skbod"]
+size = Vector2(32, 5)
+
+[node name="Stick" type="Sprite2D"]
+texture = ExtResource("1_tq37x")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+collision_layer = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_skbod")
+one_way_collision = true

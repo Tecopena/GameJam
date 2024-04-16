@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://cdymwnw3odf2e"]
+[gd_scene load_steps=8 format=3 uid="uid://cdymwnw3odf2e"]
 
 [ext_resource type="PackedScene" uid="uid://bnvhqss2dr0bp" path="res://Scenes/Level_1/bg_level_1.tscn" id="1_yru7x"]
 [ext_resource type="PackedScene" uid="uid://ca1jl7tjmr12y" path="res://Scenes/Level_1/tile_map_level_1.tscn" id="2_i2p3s"]
@@ -6,6 +6,7 @@
 [ext_resource type="Script" path="res://Scripts/GameManager.gd" id="4_mwdu7"]
 [ext_resource type="PackedScene" uid="uid://cyulk4ytok41t" path="res://Scenes/trophy.tscn" id="6_5xw3e"]
 [ext_resource type="PackedScene" uid="uid://ir8fo5ifbmq1" path="res://Scenes/obstacles.tscn" id="6_umt0l"]
+[ext_resource type="PackedScene" uid="uid://c58jvwxd42dc1" path="res://Scenes/cherries_collectable.tscn" id="7_gc53e"]
 
 [node name="Level1" type="Node2D"]
 
@@ -65,3 +66,6 @@ position = Vector2(2718, 507)
 position = Vector2(2521, 505)
 
 [node name="WrapperCherries" type="Node" parent="."]
+
+[node name="Collectables_cherries" parent="." instance=ExtResource("7_gc53e")]
+position = Vector2(873, 268)

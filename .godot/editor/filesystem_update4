@@ -1,10 +1,9 @@
 res://Scenes/obstacles.tscn
 res://Scenes/Level_1/level_1.tscn
 res://Scenes/Level_1/tile_map_level_1.tscn
-res://Scenes/trophy.tscn
-res://Scripts/player.gd
-res://Scripts/States/GroundState.gd
 res://Scenes/player.tscn
-res://Scripts/States/AirState.gd
-res://Scripts/trophy.gd
-res://Scenes/obstacles.gd
+res://Scenes/Level_2/bg_level_2.tscn
+res://Scenes/Level_2/level_2.tscn
+res://Scenes/Level_2/tile_map_level_2.tscn
+res://Scripts/player.gd
+res://Scenes/stick_platform.tscn

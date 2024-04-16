@@ -1,7 +1,9 @@
+StaticBody2D
+CollisionShape2D
+RayCast2D
 Node
 AnimatedSprite2D
 Label
-CollisionShape2D
 Area2D
 Button
 TextureRect
@@ -11,4 +13,3 @@ Sprite2D
 RemoteTransform2D
 TileMap
 AudioStreamPlayer
-AudioStreamPlayer2D
